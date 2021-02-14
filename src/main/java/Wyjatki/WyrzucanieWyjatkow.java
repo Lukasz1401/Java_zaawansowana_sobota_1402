@@ -1,6 +1,6 @@
 package Wyjatki;
 
-public class WyszucanieWyjatkow {
+public class WyrzucanieWyjatkow {
 
     // Jedyna sytuacja w której wyjatek obsługiwany nie musi zostac obsłużony
     public static void main(String[] args) throws Exception {

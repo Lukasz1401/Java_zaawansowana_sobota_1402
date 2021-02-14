@@ -4,24 +4,19 @@ import java.util.Scanner;
 
 public class Zad1 {
 
-    Scanner keyboard = new Scanner(System.in);
-    int i = keyboard.nextInt();
-    int j = keyboard.nextInt();
-
-    try {
-
-        public static void devide ( int i, int j){
-            double result = i / j;
+    public static double divide(int a, int b) throws CannotDivideBy0Exception {
+        if(b == 0) {
+            throw new CannotDivideBy0Exception();
         }
-
-    }
-
+        return  a / (double)b;
     }
 }
 
+
+
 /*
 Zaimplementuj metodę divide , która docelowo ma podzielić dwie liczby
-będące atrybutami metody. W przypadku, gdy drugi parametr metody jest równy
+będące argumntami metody. W przypadku, gdy drugi parametr metody jest równy
 0, powinien zostać wyrzucony niedomyślny wyjątek:
 CannotDivideBy0Exception
  */
