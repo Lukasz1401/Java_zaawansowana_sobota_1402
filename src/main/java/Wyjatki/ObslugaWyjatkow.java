@@ -1,4 +1,7 @@
 package Wyjatki;
+
+import java.util.Scanner;
+
 //obsługa wyjątków
 public class ObslugaWyjatkow {
 
@@ -12,11 +15,11 @@ public class ObslugaWyjatkow {
         int k = sc.nextInt();
         try {
             int[] tablica = new int[10];
-            for(int i = 0; i < k; i++) {
+            for (int i = 0; i < k; i++) {
                 tablica[i] = 10;
             }
             int i = 10;
-            System.out.println(i/j);
+            System.out.println(i / j);
         } catch (ArithmeticException ae) {
             ae.printStackTrace();
             System.out.println(ae.getMessage());
@@ -31,3 +34,4 @@ public class ObslugaWyjatkow {
         }
         System.out.println("Dalej sobie dziala");
     }
+}

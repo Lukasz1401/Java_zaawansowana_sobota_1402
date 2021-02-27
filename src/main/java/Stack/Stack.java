@@ -2,7 +2,10 @@ package Stack;
 
 public interface Stack {
 
-
+    void push(String newElement) throws Exception;
+    String pop() throws Exception;
+    String peek() throws Exception;
+    boolean isEmpty();
 }
 
 /*
